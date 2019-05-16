@@ -34,7 +34,7 @@ Ansible role to install and configure Filebeat 5+
       to_syslog: true
 
   roles:
-    - wunzeco.filebeat
+    - o2-priority.filebeat
 ```
 
 

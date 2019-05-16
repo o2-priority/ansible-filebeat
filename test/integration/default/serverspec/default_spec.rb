@@ -1,4 +1,4 @@
-require 'spec_helper'
+require '/tmp/kitchen/spec/spec_helper.rb'
 
 filebeat_conf_dir = '/etc/filebeat'
 filebeat_data_dir = '/var/lib/filebeat'
