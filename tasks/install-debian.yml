@@ -4,6 +4,10 @@
   apt_key:
     url: "{{ filebeat_signing_key_url }}"
     state: present
+  retries: 5
+  delay: 3
+  register: result
+  until: result.rc == 0
 
 - name: Add filebeat apt repository definition to apt sources list
   apt_repository:
