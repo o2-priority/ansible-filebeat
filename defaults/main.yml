@@ -45,6 +45,7 @@ filebeat_general:                     # See below for example config options
   tags: [ "service-X", "webtier" ]
 filebeat_logging:                     # See below for example config options
   to_syslog: true
+  level: warning
 
 
 filebeat_config_validate_cmd: "{{ filebeat_bin_dir }}/filebeat test config"
